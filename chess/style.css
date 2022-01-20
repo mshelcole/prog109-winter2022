@@ -33,12 +33,12 @@ clear:both;
  padding: 10px;
  margin:10px;
  text-align:center;
- background-color:lightyellow;
+ background-color:lightblue;
 }
 
 #container {
  margin-top:20%;
- margin-left:10%;
+ margin-left:20%;
  margin-right:10%;
  margin-bottom:5%;
 }
@@ -50,7 +50,7 @@ clear:both;
  padding:10px;
  margin:0px;
  width:100%;
- background-color:lightyellow;
+ background-color:lightblue;
  text-align:center; 
  z-index:10;
  font-family: 'AmbrosiaMedium';
