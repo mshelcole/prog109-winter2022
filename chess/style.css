@@ -31,7 +31,7 @@ clear:both;
 #footer {
  border:solid 1px;
  padding: 10px;
- margin:10px;
+ margin: 0px;
  text-align:center;
  background-color:lightblue;
 }
