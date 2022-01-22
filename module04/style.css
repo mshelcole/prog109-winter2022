@@ -1,1 +1,56 @@
+	* {
+				font-family: Arial, Verdana, sans-serif;
+				color: #665544;
+				text-align: center;}
+			body {
+				width: 90%;
+				margin: 0 auto;
+                background-image: url("https://64.media.tumblr.com/4d7d5e4a5766e82478bb73c4f1163745/tumblr_o237isKrFL1ripa0eo1_400.jpg");
+              }
 
+            #header{ text-align:center; 
+            font-family: 'CrosterianRegular';}
+
+
+			#content {
+				overflow: auto;}
+			#nav, #feature, #footer {
+				margin: 1%;}
+			.column1, .column2, .column3 {
+				width: 31.3%;
+				float: left;
+				margin: 1%;}
+
+              .column1 {				
+              background-color: pink;
+              }
+			
+               .column2 {			
+              background-color: red;
+              }
+                
+              .column3 {
+				margin-right: 0%;
+              background-color: salmon;
+              }
+
+			li {
+				display: inline;
+				padding: 0.5em;}
+
+	        #nav, #footer {
+				background-color: #ff66b3;
+				padding: 0.5em 0;
+
+                }
+			
+          #feature, .article {
+				height: 10em;
+				margin-bottom: 1em;
+				}
+            #feature {
+             background-color: lightgreen;
+             background-image: url(https://abstract.desktopnexus.com/get/506079/?t=k4jddmo4v7orftrkuuudnnpqh661ec88a79cd30)
+             background-position: right;
+             background-repeat:no-repeat;}
+		</style>
