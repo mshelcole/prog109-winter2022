@@ -1,22 +1,23 @@
-	* {
-				font-family: Arial, Verdana, sans-serif;
-				color: #665544;
-				text-align: center;}
-			body {
-				width: 90%;
+* {
+	font-family: Arial, Verdana, sans-serif;
+    color: #665544;
+	text-align: center;}
+
+	body {
+	  			width: 90%;
 				margin: 0 auto;
                 background-image: url("https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_960_720.jpg");
-              }
+            }
 
-            #header{ text-align:center; 
+            header{ text-align:center; 
             font-family: 'CrosterianRegular';}
 
 
-			#content {
+			main {
 				overflow: auto;}
-			#nav, #feature, #footer {
+			nav, section, footer {
 				margin: 1%;}
-			.column1, .column2, .column3 {
+			article {
 				width: 31.3%;
 				float: left;
 				margin: 1%;}
@@ -38,19 +39,19 @@
 				display: inline;
 				padding: 0.5em;}
 
-	        #nav, #footer {
+	        nav,footer {
 				background-color: #ff66b3;
 				padding: 0.5em 0;
 
                 }
 			
-          #feature, .article {
+          main, article {
 				height: 10em;
 				margin-bottom: 1em;
 				}
-            #feature {
+            main{
              background-color: lightgreen;
              background-image:  url("https://github.com/mshelcole/prog109-winter2022/blob/main/module04/images/poppy-flowers-cropped.jpg");
              background-position: right;
              background-repeat:no-repeat;}
-		</style>
+	
