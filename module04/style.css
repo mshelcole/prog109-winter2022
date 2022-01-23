@@ -2,12 +2,18 @@
 				font-family: Arial, Verdana, sans-serif;
 				color: #665544;
 				text-align: center;}
-			body {
-				width: 90%;
-				margin: 0 auto;
+			body, html {
+
+
+                height: 100%; 
+                margin: 0;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+               
                 background-image: url("https://www.gardeningknowhow.com/wp-content/uploads/2019/08/flower-color-400x267.jpg");
               }
-
             header{ text-align:center; 
             font-family: 'CrosterianRegular';}
 
