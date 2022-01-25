@@ -1,63 +1,55 @@
-* {
-				font-family: Arial, Verdana, sans-serif;
-				color: #665544;
-				text-align: center;}
-			body, html {
+body, html {
+	height: 100%;
+	margin: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("https://www.gardeningknowhow.com/wp-content/uploads/2019/08/flower-color-400x267.jpg");
+}
 
+header{ text-align:center; 
+font-family: 'CrosterianRegular';
+font-weight: bold;
+font-style: normal;
+}
 
-                height: 100%; 
-                margin: 0;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-
-               
-                background-image: url("https://www.gardeningknowhow.com/wp-content/uploads/2019/08/flower-color-400x267.jpg");
-              }
-            header{ text-align:center; 
-            font-family: 'CrosterianRegular';}
-
-
-			main {
-				overflow: auto;}
-			nav, section, footer {
-				margin: 1%;}
-			.column1, .column2, .column3 {
-				width: 31.3%;
-				float: left;
-				margin: 1%;}
-
-              .column1 {				
-              background-color: pink;
-              }
-			
-               .column2 {			
-              background-color: red;
-              }
-                
-              .column3 {
-				margin-right: 0%;
-              background-color: salmon;
-              }
-
-			li {
-				display: inline;
-				padding: 0.5em;}
-
-	        nav, footer {
-				background-color: #ff66b3;
-				padding: 0.5em 0;
-
-                }
-			
-          section, .article {
-				height: 10em;
-				margin-bottom: 1em;
-				}
-            section {
-             background-color: lightgreen;
-             background-image:  url("images/poppy-flowers-cropped.jpg");
- 	     background-size:contain;
-             background-position: right;
-             background-repeat:no-repeat;}
-
+main {
+	overflow: auto;
+}
+nav, section, footer {
+	margin: 1%;
+}
+.column1, .column2, .column3 {
+	width: 31.3%;
+	float: left;
+	margin: 1%;
+}
+.column1 {
+	background-color: pink;
+}
+.column2 {
+	background-color: red;
+}
+.column3 {
+	margin-right: 0%;
+	background-color: salmon;
+}
+li {
+	display: inline;
+	padding: 0.5em;
+}
+nav, footer {
+	background-color: #ff66b3;
+	padding: 0.5em 0;
+}
+section, .article {
+	height: 10em;
+	margin-bottom: 1em;
+}
+section {
+	background-color: lightgreen;
+	background-image: url("images/poppy-flowers-cropped.jpg");
+	background-size:contain;
+	background-position: right;
+	background-repeat:no-repeat;
+}
