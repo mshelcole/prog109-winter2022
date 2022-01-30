@@ -57,5 +57,7 @@ nav ul {
   gap: 1.9rem;
 }
 
+
 nav ul li {
   font-weight: var(--bold-font);
+}
