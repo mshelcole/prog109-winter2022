@@ -1,5 +1,5 @@
 //var table = 3;             // Unit of table
-var table = parseInt(prompt('Enter an integer: '));
+var table = parseInt(prompt('Enter a number between 1-10: '));
 //operator = GetValueFromUser("operator");
 //table = GetValueFromUser("table")
 
@@ -7,22 +7,9 @@ var table = parseInt(prompt('Enter an integer: '));
 var el = document.getElementById('blackboard');
 el.innerHTML = GetTableContent(table);
 
-
-//function GetValueFromUser(valueType) {
-//var table = parseInt(prompt('Enter an integer: '));
-//}
-
-//function GetValueFromUser(valueType) {
- // var table = parseInt(prompt('Enter an integer: '));
-
-  // return prompt(valueType);
-//}
-
-
 function GetTableContent(table) {
   var i = 1;                 // Set counter to 1
   var msg = '<h2>Multiplication Table</h2>';   // Message  
-
 
   {// Do multiplication
     while (i < 11) {
