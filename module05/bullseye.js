@@ -1,7 +1,7 @@
 //var table = 3;             // Unit of table
-//var table = parseInt(prompt('Enter an integer: '));
+var table = parseInt(prompt('Enter an integer: '));
 //operator = GetValueFromUser("operator");
-table = GetValueFromUser("table")
+//table = GetValueFromUser("table")
 
 // Write the message into the page
 var el = document.getElementById('blackboard');
@@ -12,11 +12,11 @@ el.innerHTML = GetTableContent(table);
 //var table = parseInt(prompt('Enter an integer: '));
 //}
 
-function GetValueFromUser(valueType) {
+//function GetValueFromUser(valueType) {
  // var table = parseInt(prompt('Enter an integer: '));
 
-   return prompt(valueType);
-}
+ //  return prompt(valueType);
+//}
 
 
 function GetTableContent(table) {
