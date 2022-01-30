@@ -15,7 +15,7 @@ el.innerHTML = GetTableContent(table);
 //function GetValueFromUser(valueType) {
  // var table = parseInt(prompt('Enter an integer: '));
 
- //  return prompt(valueType);
+  // return prompt(valueType);
 //}
 
 
@@ -30,3 +30,5 @@ function GetTableContent(table) {
       i++;
     }
   }
+  return msg;
+}
