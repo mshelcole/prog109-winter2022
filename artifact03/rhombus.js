@@ -1,4 +1,5 @@
-/ var rHeight =5;
+ 
+// var rHeight =5;
 // var colorEven = "orange";
 // var colorOdd = "black";
 // var symbol ="*";
@@ -56,5 +57,3 @@ rLine +="</p>";
 
 document.getElementById("downRight").innerHTML = rLine;
 }
-
- 
