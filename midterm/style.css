@@ -1,5 +1,25 @@
 
-body, html {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/* Variables end */
+
+-body, html {
 	margin: 0;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -13,7 +33,7 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 2px solid red; */
+
 }
 
 ul {
@@ -76,86 +96,7 @@ nav ul li {
   font-weight: var(--bold-font);
 }
 
-.burger-menu {
-  color: var(--primary-color);
-  font-size: 2rem;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  display: none;
-}
-/* Navbar ends */
 
-/* Hero section */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-  max-width: 68.75rem;
-  margin: auto;
-}
-
-.hero img {
-  height: 37.5rem;
-  width: 37.5rem;
-}
-
-.bio {
-  width: 25rem;
-  padding: 0.625rem;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-}
-
-.bio h1 {
-  margin-bottom: var(--bottom-margin);
-}
-
-.bio p {
-  line-height: var(--line-height);
-  padding: 0.3rem 0;
-}
-/* Hero section ends */
-
-/* More about */
-.more-about {
-  background-color: var(--bg-color);
-  padding: 1rem 6rem;
-}
-
-.more-about h2 {
-  margin-bottom: var(--bottom-margin);
-  text-align: center;
-}
-
-.more-about p {
-  line-height: var(--line-height);
-  padding: 0.4rem;
-}
-/* More about ends */
-
-/* Skills section */
-.skills {
-  max-width: 68.75rem;
-  margin: auto;
-  text-align: center;
-  margin-top: 2.5rem;
-}
-
-.skill-header {
-  margin-bottom: 1rem;
-}
-
-.skills-wrapper img {
-  padding: 1.25rem;
-}
-
-.icon {
-  width: 11.875rem;
-  height: 11.25rem;
-}
-/* Skills section ends */
 
 /* Projects section */
 .projects {
@@ -264,20 +205,6 @@ nav ul li {
 }
 /* Contacts section ends */
 
-/* Social buttons */
-.socials {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  right: 1%;
-  bottom: 50%;
-}
-
-.socicon {
-  width: 2rem;
-  height: 2rem;
-}
-/* Social button ends */
 
 /* Scroll to top button */
 .scroll-up {
@@ -293,14 +220,7 @@ nav ul li {
 }
 /* Scroll to top button ends */
 
-/* Footer section */
-footer {
-  background-color: var(--bg-color);
-  padding: 1.25rem;
-  text-align: center;
-  margin: 2rem 0 0;
-}
-/* Footer section ends */
+
 
 /* General (utilities) */
 .icon-card {
@@ -413,4 +333,3 @@ footer {
     max-width: 17.75rem;
   }
 }
-
