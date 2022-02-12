@@ -12,48 +12,15 @@
    margin-top:250px;
 }
 
+
 nav {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 3.5rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   min-height: 8vh;	
   background-color: teal;
-  font-family: "Montserrat", sans-serif;	
+  font-family: "Montserrat", sans-serif;
 }
 
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  width:30%;	
-}
-
-.navigation li{
-  list-style: none;
-}
-
-.heading{
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size:20px;  
-}
-
-.navigation {
-  color: white;
-  text-decoration: none;
-  letter-spacing: 3px; 
-  font-weight: bold;
-  font-size:14px;
-  padding:14px 16px;
-  
-}
-
-.navigation li a.hover:not(.active){
-  backgound-color: lightseagreen;
-  
-}
-
-.navigation li a.active{
-  backgound-color: #4caf50;
-  
-}
