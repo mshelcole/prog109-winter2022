@@ -13,6 +13,10 @@
 }
 
 
+
+/* Navbar */
+
+
 nav {
   display: flex;
   align-items: center;
@@ -24,3 +28,37 @@ nav {
   font-family: "Montserrat", sans-serif;
 }
 
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  width:30%;	
+}
+
+nav li{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px; 
+  font-weight: bold;
+  font-size:14px;
+  padding:14px 16px;
+    list-style: none;
+  
+}
+
+nav li a.hover:not(.active){
+  backgound-color: lightseagreen;
+  
+}
+
+nav li li a.active{
+  backgound-color: #4caf50;
+  
+}
+
+.heading{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:20px;  
+}
