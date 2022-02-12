@@ -10,7 +10,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url("images/photo-pp-2.jpg");
-  scroll-behavior: smooth;
+  	scroll-behavior: smooth;
 }
 
 .body-text{
