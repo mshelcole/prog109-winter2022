@@ -4,6 +4,15 @@
    box-sizing: border-box;
 }
 
+-body, html {
+	margin: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("images/photo-pp-2.jpg");
+  scroll-behavior: smooth;
+}
+
 .body-text{
    display: flex;
    font-family: "Montserrat", sans-serif;
