@@ -1,4 +1,3 @@
-
 *{
 	margin: 0px;
 	padding: 0px;
@@ -7,12 +6,19 @@
 	background-image: url("images/photo-pp-2.jpg");
 }
 
+.body-text{
+   display: flex;
+   font-family: "Montserrat", sans-serif;
+   align-items: center;
+   justify-content: center;
+   margin-top:250px;
+}
 
-/* Navbar */
+
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   min-height: 8vh;	
   background-color: teal;
   font-family: "Montserrat", sans-serif;	
@@ -24,6 +30,35 @@ nav {
   width:30;	
 }
 
+.navigation li{
 
+  list-style: none;
 
+}
 
+.heading{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:20px;
+  
+}
+
+.navigation {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:14px;
+  padding:14px;
+  
+}
+
+.navigation li a.hover:not(.active){
+  backgound-color: lightseagreen;
+  
+}
+
+.navigation li a.active{
+  backgound-color: #4caf50;
+  
+}
