@@ -1,7 +1,7 @@
 *{
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
 }
 
 .body-text{
@@ -29,17 +29,14 @@ nav {
 }
 
 .navigation li{
-
   list-style: none;
-
 }
 
 .heading{
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size:20px;
-  
+  font-size:20px;  
 }
 
 .navigation {
