@@ -27,14 +27,14 @@ function validateForm() {
     else
         validFirstname = true;
 
-    // Validate Lastname
+ // Validate Lastname
     if (myContact.lastname.value === null ||
         myContact.lastname.value === "" ||
-        myContact.firstname.value.length > 20 ||
+        myContact.lastname.value.length > 50 ||
         !myContact.lastname.value.match(letters))
         errorMessages += "<p> The lastname must be less than 50 characters and is required.  Only letters accepted</p>";
     else
-        validateUsername = true;
+        validLastname = true;
 
     // Validate Email
     if (myContact.email.value === null ||
@@ -44,8 +44,7 @@ function validateForm() {
     else
         validEmail = true;
 
-
-
+  
     // Validate Phonenumber
     if (myContact.phone.value === null ||
         myContact.phone.value === "" ||
@@ -55,15 +54,13 @@ function validateForm() {
     else
         validPhone = true;
 
-
-
     // Validate Username Required 12
     if (myContact.username.value.length > 12 ||
         myContact.username.value === null ||
         myContact.username.value === "")
         errorMessages += "<p> The username must be less than 12 characters and is required</p>";
     else
-        validateUsername = true;
+        validUsername = true;
 
     // Validate Password 
     if (myContact.password.value.length > 7 ||
@@ -71,20 +68,20 @@ function validateForm() {
         myContact.password.value === "")
         errorMessages += "<p> The password must be less than 7 characters and is required</p>";
     else
-        validateUsername = true;
+        validPassword = true;
 
     // Validate Address
     if (
-        myContact.password.value === null ||
-        myContact.password.value === "")
+        myContact.address.value === null ||
+        myContact.address.value === "")
         errorMessages += "<p> Address is reqiured</p>";
     else
         validAddress = true;
 
     //Validate City
     if (
-        myContact.password.value === null ||
-        myContact.password.value === "")
+        myContact.city.value === null ||
+        myContact.city.value === "")
         errorMessages += "<p> City is reqiured</p>";
     else
         validCity = true;
@@ -97,6 +94,7 @@ function validateForm() {
     else
         validState = true;
 
+
     //Validate Country
 
     if (
@@ -105,19 +103,18 @@ function validateForm() {
         errorMessages += "<p> Select your country from the list</p>";
     else
         validCountry = true;
-
-  
-
+        
     //Validate Zip
 
-    if (myContact.country.value === "000" &&
+    if (myContact.country.value === "000" ||
         myContact.zipcode.value.length != 5)
         errorMessages += "<p> Zipcode required</p>";
     else
         validZipcode = true;
 
 
+
     document.getElementById("errorMessages").innerHTML = errorMessages
-    return (validZipcode && validState && validCountry && validEmail && validAddress && validCity && validFirstname && validLastname && validPhone && validUsername && validPassword);
+    return (validFirstname && validLastname &&  validEmail &&  validPhone && validUsername && validPassword  && validAddress && validCity  && validState && validCountry && validZipcode );
 
 }
