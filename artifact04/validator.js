@@ -21,16 +21,16 @@ function validateForm() {
     // Validate Firstname
     if (myContact.firstname.value === null ||
         myContact.firstname.value === "" ||
-        myContact.firstname.value > 20 ||
+        myContact.firstname.value.length > 20 ||
         !myContact.firstname.value.match(letters))
         errorMessages += "<p> The firstname must be less than 20 characters and is required.  Only letters accepted</p>";
     else
         validFirstname = true;
 
     // Validate Lastname
-    if (myContact.lastname.value == null ||
+    if (myContact.lastname.value === null ||
         myContact.lastname.value === "" ||
-        myContact.lastname.value > 20 ||
+        myContact.firstname.value.length > 20 ||
         !myContact.lastname.value.match(letters))
         errorMessages += "<p> The lastname must be less than 50 characters and is required.  Only letters accepted</p>";
     else
@@ -49,7 +49,7 @@ function validateForm() {
     // Validate Phonenumber
     if (myContact.phone.value === null ||
         myContact.phone.value === "" ||
-        myContact.phone.value > 15 ||
+        myContact.phone.value.length > 15 ||
         !myContact.phone.value.match(numbers))
         errorMessages += "<p> The phone number must be less than 15 characters and is required.  Only numbers accepted</p>";
     else
