@@ -1,27 +1,42 @@
-// Defining a function to validate form 
+/// Defining a function to validate form 
 function validateForm() {
     var validFirstname = false;
     var validLastname = false;
     var validUsername = false;
     var validPassword = false;
+    var validPhone = false;
+    var letters = /^[A-Za-z]+$/;
+    var numbers = /^[0-9]+$/;
     var errorMessages = "";
 
 
     // Validate Firstname
-    if (myContact.firstname.value == null ||
+    if (myContact.firstname.value === null ||
         myContact.firstname.value === "" ||
-        myContact.firstname.value > 20)
-        errorMessages += "<p> The firstname must be less than 20 characters</p>";
+        myContact.firstname.value > 20 ||
+        !myContact.firstname.value.match(letters))
+        errorMessages += "<p> The firstname must be less than 20 characters and is required.  Only letters accepted</p>";
     else
-        validateUsername = true;
+        validFirstname = true;
 
     // Validate Lastname
     if (myContact.lastname.value == null ||
         myContact.lastname.value === "" ||
-        myContact.lastname.value > 20)
-        errorMessages += "<p> The lastname must be less than 20 characters</p>";
+        myContact.lastname.value > 20 ||
+        !myContact.lastname.value.match(letters))
+        errorMessages += "<p> The lastname must be less than 50 characters and is required.  Only letters accepted</p>";
     else
         validateUsername = true;
+
+    // Validate Phonenumber
+    if (myContact.phone.value === null ||
+        myContact.phone.value === "" ||
+        myContact.phone.value > 15 ||
+        !myContact.phone.value.match(numbers))
+        errorMessages += "<p> The firstname must be less than 15 characters and is required.  Only numbers accepted</p>";
+    else
+        validPhonename = true;
+
 
 
     // Validate Username Required 12
@@ -41,7 +56,4 @@ function validateForm() {
         validateUsername = true;
 
     document.getElementById("errorMessages").innerHTML = errorMessages
-    return (validFirstname && validLastname && validateUsername && validatePassword);
-
-}
-
+    return (validFirstname && validLastname && validPhone && validUsername && validPassword);
