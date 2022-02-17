@@ -91,17 +91,18 @@ function validateForm() {
 
     //Validate State
     if (
-        myContact.state.value === null ||
-        myContact.state.value === "")
-        errorMessages += "<p> State is reqiured</p>";
+        myContact.state.value === "000"
+    )
+        errorMessages += "<p> Select your State from the list</p>";
     else
         validState = true;
 
     //Validate Country
+
     if (
-        myContact.country.value === null ||
-        myContact.country.value === "")
-        errorMessages += "<p> Country is reqiured</p>";
+        myContact.country.value === "000")
+
+        errorMessages += "<p> Select your country from the list</p>";
     else
         validCountry = true;
 
