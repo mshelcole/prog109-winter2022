@@ -106,8 +106,23 @@ function validateForm() {
     else
         validCountry = true;
 
+    if (
+        myContact.country.value === "000")
+
+        errorMessages += "<p> Select your country from the list</p>";
+    else
+        validCountry = true;
+
+    //Validate Zip
+
+    if (myContact.country.value === "000" &&
+        myContact.zipcode.value.length != 5)
+        errorMessages += "<p> Zipcode required</p>";
+    else
+        validZipcode = true;
+
 
     document.getElementById("errorMessages").innerHTML = errorMessages
-    return (validState && validCountry && validEmail && validAddress && validCity && validFirstname && validLastname && validPhone && validUsername && validPassword);
+    return (validZipcode && validState && validCountry && validEmail && validAddress && validCity && validFirstname && validLastname && validPhone && validUsername && validPassword);
 
 }
