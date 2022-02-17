@@ -74,7 +74,7 @@ function validateForm() {
     if (
         myContact.address.value === null ||
         myContact.address.value === "")
-        errorMessages += "<p> Address is reqiured</p>";
+        errorMessages += "<p> Address is required</p>";
     else
         validAddress = true;
 
@@ -82,7 +82,7 @@ function validateForm() {
     if (
         myContact.city.value === null ||
         myContact.city.value === "")
-        errorMessages += "<p> City is reqiured</p>";
+        errorMessages += "<p> City is required</p>";
     else
         validCity = true;
 
@@ -90,7 +90,7 @@ function validateForm() {
     if (
         myContact.state.value === "000"
     )
-        errorMessages += "<p> Select your State from the list</p>";
+        errorMessages += "<p> Select your state from the list</p>";
     else
         validState = true;
 
@@ -107,7 +107,7 @@ function validateForm() {
     //Validate Zip
 
     if (myContact.country.value === "000")
- 	 errorMessages += "<p> Zipcode required</p>";
+ 	 errorMessages += "<p> Zipcode is required</p>";
         
     else if (myContact.zipcode.value.length != 5)
 	errorMessages += "<p> Zipcode must be 5 characters</p>";
