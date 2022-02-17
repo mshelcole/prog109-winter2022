@@ -106,12 +106,7 @@ function validateForm() {
     else
         validCountry = true;
 
-    if (
-        myContact.country.value === "000")
-
-        errorMessages += "<p> Select your country from the list</p>";
-    else
-        validCountry = true;
+  
 
     //Validate Zip
 
