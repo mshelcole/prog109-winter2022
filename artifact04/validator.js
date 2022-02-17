@@ -1,13 +1,11 @@
-// Defining a function to validate form 
+// Defining a function to validate form
 function validateForm() {
     var validFirstname = false;
     var validLastname = false;
-    var userEmail = document.getElementById("email").value;
-    var atpos = userEmail.indexOf("@");
-    var dotpos = userEmail.lastIndexOf(".");
+    var validEmail = false;
+    var validPhone = false;
     var validUsername = false;
     var validPassword = false;
-    var validPhone = false;
     var validAddress = false;
     var validCity = false;
     var validState = false;
@@ -15,7 +13,9 @@ function validateForm() {
     var validZipcode = false;
     var letters = /^[A-Za-z]+$/;
     var numbers = /^[0-9]+$/;
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var errorMessages = "";
+
 
 
     // Validate Firstname
@@ -37,11 +37,14 @@ function validateForm() {
         validateUsername = true;
 
     // Validate Email
-    if (atpos < 1 || dotpos < atpos + 2 ||
-        dotpos + 2 >= userEmail.length)
-        errorMessages += "<p>Invalid email</p>";
+    if (myContact.email.value === null ||
+        myContact.email.value === "" ||
+        !myContact.email.value.match(mailformat))
+        errorMessages += "<p> Invalid Email</p>";
     else
-        validPhone = true;
+        validEmail = true;
+
+
 
     // Validate Phonenumber
     if (myContact.phone.value === null ||
@@ -86,5 +89,24 @@ function validateForm() {
     else
         validCity = true;
 
+    //Validate State
+    if (
+        myContact.state.value === null ||
+        myContact.state.value === "")
+        errorMessages += "<p> State is reqiured</p>";
+    else
+        validState = true;
+
+    //Validate Country
+    if (
+        myContact.country.value === null ||
+        myContact.country.value === "")
+        errorMessages += "<p> Country is reqiured</p>";
+    else
+        validCountry = true;
+
+
     document.getElementById("errorMessages").innerHTML = errorMessages
-    return (validCity && validFirstname && validLastname && validPhone && validUsername && validPassword && validAddress);
+    return (validState && validCountry && validEmail && validAddress && validCity && validFirstname && validLastname && validPhone && validUsername && validPassword);
+
+}
