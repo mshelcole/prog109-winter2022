@@ -27,7 +27,7 @@ function validateForm() {
     else
         validFirstname = true;
 
- // Validate Lastname
+    // Validate Lastname
     if (myContact.lastname.value === null ||
         myContact.lastname.value === "" ||
         myContact.lastname.value.length > 50 ||
@@ -44,7 +44,7 @@ function validateForm() {
     else
         validEmail = true;
 
-  
+
     // Validate Phonenumber
     if (myContact.phone.value === null ||
         myContact.phone.value === "" ||
@@ -103,7 +103,7 @@ function validateForm() {
         errorMessages += "<p> Select your country from the list</p>";
     else
         validCountry = true;
-        
+
     //Validate Zip
 
     if (myContact.country.value === "000" ||
@@ -115,6 +115,6 @@ function validateForm() {
 
 
     document.getElementById("errorMessages").innerHTML = errorMessages
-    return (validFirstname && validLastname &&  validEmail &&  validPhone && validUsername && validPassword  && validAddress && validCity  && validState && validCountry && validZipcode );
+    return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
 
 }
