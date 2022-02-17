@@ -106,10 +106,13 @@ function validateForm() {
 
     //Validate Zip
 
-    if (myContact.country.value === "000" ||
-        myContact.zipcode.value.length != 5)
-        errorMessages += "<p> Zipcode required</p>";
-    else
+    if (myContact.country.value === "000")
+ 	 errorMessages += "<p> Zipcode required</p>";
+        
+    else if (myContact.zipcode.value.length != 5)
+	errorMessages += "<p> Zipcode must be 5 characters</p>";
+   
+    else	
         validZipcode = true;
 
 
