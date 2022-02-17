@@ -1,10 +1,18 @@
-/// Defining a function to validate form 
+// Defining a function to validate form 
 function validateForm() {
     var validFirstname = false;
     var validLastname = false;
+    var userEmail = document.getElementById("email").value;
+    var atpos = userEmail.indexOf("@");
+    var dotpos = userEmail.lastIndexOf(".");
     var validUsername = false;
     var validPassword = false;
     var validPhone = false;
+    var validAddress = false;
+    var validCity = false;
+    var validState = false;
+    var validCountry = false;
+    var validZipcode = false;
     var letters = /^[A-Za-z]+$/;
     var numbers = /^[0-9]+$/;
     var errorMessages = "";
@@ -28,14 +36,21 @@ function validateForm() {
     else
         validateUsername = true;
 
+    // Validate Email
+    if (atpos < 1 || dotpos < atpos + 2 ||
+        dotpos + 2 >= userEmail.length)
+        errorMessages += "<p>Invalid email</p>";
+    else
+        validPhone = true;
+
     // Validate Phonenumber
     if (myContact.phone.value === null ||
         myContact.phone.value === "" ||
         myContact.phone.value > 15 ||
         !myContact.phone.value.match(numbers))
-        errorMessages += "<p> The firstname must be less than 15 characters and is required.  Only numbers accepted</p>";
+        errorMessages += "<p> The phone number must be less than 15 characters and is required.  Only numbers accepted</p>";
     else
-        validPhonename = true;
+        validPhone = true;
 
 
 
@@ -55,5 +70,21 @@ function validateForm() {
     else
         validateUsername = true;
 
+    // Validate Address
+    if (
+        myContact.password.value === null ||
+        myContact.password.value === "")
+        errorMessages += "<p> Address is reqiured</p>";
+    else
+        validAddress = true;
+
+    //Validate City
+    if (
+        myContact.password.value === null ||
+        myContact.password.value === "")
+        errorMessages += "<p> City is reqiured</p>";
+    else
+        validCity = true;
+
     document.getElementById("errorMessages").innerHTML = errorMessages
-    return (validFirstname && validLastname && validPhone && validUsername && validPassword);
+    return (validCity && validFirstname && validLastname && validPhone && validUsername && validPassword && validAddress);
