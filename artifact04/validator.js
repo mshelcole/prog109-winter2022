@@ -112,6 +112,6 @@ function validate(){
   
   
   
-  alert("Form Submitted Successfully!");
+  //alert("Form Submitted Successfully!");
   return true;
 }
