@@ -14,7 +14,7 @@ function validate(){
   var errorMessage = document.getElementById("errorMessage");
   var letters = /^[A-Za-z]+$/;
   var numbers = /^[0-9]+$/;
-  
+  var validZipcode = false;
   errorMessage.style.padding = "10px";
   
   var text;
@@ -104,7 +104,16 @@ function validate(){
               
   }
   
-  
+    else if (country === "USA") {
+    if (zipcode.length != 5 && country === "USA") {
+    text = "Zipcode is required";
+    errorMessage.innerHTML = text;
+    validZipcode = false;
+    return false;
+ }
 
-  return true;
-}
+    validZipcode = true;
+    return true;
+ }
+    return true;
+ }
