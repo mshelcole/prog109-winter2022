@@ -106,7 +106,7 @@ function validate(){
   
     else if (country === "USA") {
     if (zipcode.length != 5 && country === "USA") {
-    text = "Zipcode is required";
+    text = " 5 digit Zipcode is required";
     errorMessage.innerHTML = text;
     validZipcode = false;
     return false;
