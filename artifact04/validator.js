@@ -96,13 +96,13 @@ function validate(){
   }
   
      
-    if(country === 1  ||
-    zipcode.length != 5 ){
-    text = "Zipcode is required.";
-    errorMessage.innerHTML = text;
-    return false;
+    //if(country === 1  ||
+    //zipcode.length != 5 ){
+    //text = "Zipcode is required.";
+   // errorMessage.innerHTML = text;
+   // return false;
               
-  }
+ // }
   
     else if (country === "USA") {
     if (zipcode.length != 5 && country === "USA") {
