@@ -43,12 +43,17 @@ function validate(){
     return false;
   }
   
-    if(phone === null ||
-    phone === "" ||
-    phone.length > 15 ||
-    !phone.match(numbers)){
-    text = "Phone is required.  Must be less than 15 characters and numbers only.";
+    //if(phone === null ||
+    //phone === "" ||
+    //phone.length > 15 ||
+    //!phone.match(numbers))
+  
+     if(isNaN(phone) || phone.length != 10){
+    text = "Please Enter valid Phone Number";
     errorMessage.innerHTML = text;
+    
+    //text = "Phone is required.  Must be less than 15 characters and numbers only.";
+    //errorMessage.innerHTML = text;
     return false;
   }
   
