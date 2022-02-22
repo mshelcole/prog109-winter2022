@@ -13,7 +13,7 @@ function validate(){
   var zipcode = document.getElementById("zipcode").value;
   var errorMessage = document.getElementById("errorMessage");
   var letters = /^[A-Za-z]+$/;
-  var numbers = /^[0-9]+$/;
+  //var numbers = /^[0-9]+$/;
   var validZipcode = false;
   errorMessage.style.padding = "10px";
   
@@ -47,8 +47,8 @@ function validate(){
     //phone === "" ||
     //phone.length > 15 ||
     //!phone.match(numbers))
-  
-     if(isNaN(phone) || phone.length != 10){
+
+     if(isNaN(phone) || phone.length > 15 || phone=== null || phone===""){
     text = "Please Enter valid Phone Number";
     errorMessage.innerHTML = text;
     
@@ -81,7 +81,7 @@ function validate(){
     return false;
   }
   
-       if(city === null ||
+    if(city === null ||
     city === "" ){
     text = "City is required.";
     errorMessage.innerHTML = text;
@@ -100,8 +100,7 @@ function validate(){
     return false;
   }
   
-    
-  
+
     else if (country === "USA") {
     if (zipcode.length != 5 && country === "USA") {
     text = " 5 digit Zipcode is required";
