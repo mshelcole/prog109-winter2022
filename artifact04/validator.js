@@ -13,7 +13,6 @@ function validate(){
   var zipcode = document.getElementById("zipcode").value;
   var errorMessage = document.getElementById("errorMessage");
   var letters = /^[A-Za-z]+$/;
-  //var numbers = /^[0-9]+$/;
   var validZipcode = false;
   errorMessage.style.padding = "10px";
   
@@ -43,17 +42,9 @@ function validate(){
     return false;
   }
   
-    //if(phone === null ||
-    //phone === "" ||
-    //phone.length > 15 ||
-    //!phone.match(numbers))
-
      if(isNaN(phone) || phone.length > 15 || phone=== null || phone===""){
-    text = "Please Enter valid Phone Number";
+    text = "Please Enter a valid phone number";
     errorMessage.innerHTML = text;
-    
-    //text = "Phone is required.  Must be less than 15 characters and numbers only.";
-    //errorMessage.innerHTML = text;
     return false;
   }
   
