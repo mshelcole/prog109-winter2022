@@ -1,8 +1,8 @@
 var myImages =["images/Mount_Rainier_from_west.jpg", 
                "images/Mount_Baker_from_Boulder_Creek.jpg",
-               "Mount_Olympus_Washington.jpg",
-               "400px-Mount_Adams_from_Cultus_Creek_Trail.jpg",
-               "MSH82_st_helens_plume_from_harrys_ridge_05-19-82.jpg"];
+               "images/Mount_Olympus_Washington.jpg",
+               "images/400px-Mount_Adams_from_Cultus_Creek_Trail.jpg",
+               "images/MSH82_st_helens_plume_from_harrys_ridge_05-19-82.jpg"];
 
 
 var captionImages =["Mount Rainier","Mount Baker","Mount Olympus","Mount Adams","Mount St. Helens"];
